@@ -1,0 +1,1 @@
+@jobs/stream_table.py    convert the append in to merge for core.user table base on user_id and updated_at. This should ensure that core.user should have atmost only one entry for for every user_id and should the latest. 
