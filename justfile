@@ -48,3 +48,8 @@ stream-stop:
 [working-directory: 'etl']
 seed:
     uv run python src/data_gen/gen_staging_table.py
+
+# Append 2k Mixpanel-style app sessions to staging.user_activity (append-only; needs `just seed` first)
+[working-directory: 'etl']
+seed-activity:
+    uv run python src/data_gen/gen_user_activity.py

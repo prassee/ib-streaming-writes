@@ -8,7 +8,7 @@ authors = [
 ]
 requires-python = ">=3.13"
 dependencies = [
-    "pyiceberg[pyarrow,polars]>=0.12.0,<0.13",
+    "pyiceberg[polars,pyarrow,pyiceberg-core]>=0.12.0,<0.13",
     "polars>=1.44.2,<2",
     "pyarrow>=25.0.1,<26",
 ]
